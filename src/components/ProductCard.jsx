@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { CreditCard } from 'lucide-react'
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export default function ProductCard({ product, onBuyNow }) {
   return (
@@ -11,7 +10,6 @@ export default function ProductCard({ product, onBuyNow }) {
         {/* Car Image with Price Banner */}
         <div className="relative aspect-[16/15] overflow-hidden">
           <Image
-            // src={`${baseUrl}/${product.image}`}
             src={product.image}
             alt={product.title}
             fill
