@@ -11,7 +11,8 @@ export default function ProductCard({ product, onBuyNow }) {
         {/* Car Image with Price Banner */}
         <div className="relative aspect-[16/15] overflow-hidden">
           <Image
-            src={`${baseUrl}/${product.image}`}
+            // src={`${baseUrl}/${product.image}`}
+            src={product.image}
             alt={product.title}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
