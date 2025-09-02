@@ -11,7 +11,7 @@ export default function Hero() {
     // Initialize AOS
     AOS.init({
       duration: 1000,
-      easing: 'ease-out-cubic',
+      easing: 'ease-in',
       once: true,
       offset: 100
     })
