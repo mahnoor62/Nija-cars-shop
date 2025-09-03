@@ -39,15 +39,15 @@ export default function ProductCard({ product, onBuyNow }) {
       // const amount_cents = Math.round(CarPriceInDollars * 100);
       console.log('CardPriceInAud', CarPriceInDollars);
 
-      // const absImage =
-      //     product.image?.startsWith('http')
-      //         ? product.image
-      //         : `${window.location.origin}${product.image.startsWith('/') ? product.image : '/' + product.image}`;
+      const absImage =
+          product.image?.startsWith('http')
+              ? product.image
+              : `${window.location.origin}${product.image.startsWith('/') ? product.image : '/' + product.image}`;
 
       const productPayload = {
         title: product.title,
         price: CarPriceInDollars,
-        image: product.image,
+        image: absImage,
       };
       console.log("productPayload", productPayload);
       const res = await fetch(`${BASE_URL}/api/payment/create-checkout-session`, {
