@@ -13,30 +13,30 @@ export default function CancelPage() {
           <div className="mx-auto w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
             <XCircle className="h-8 w-8 text-red-600" />
           </div>
-          <CardTitle className="text-2xl text-red-600">Rental Cancelled ❌</CardTitle>
+          <CardTitle className="text-2xl text-red-600">Payment Cancelled ❌</CardTitle>
         </CardHeader>
         
         <CardContent className="space-y-6">
           <p className="text-muted-foreground">
-            Your car rental has been cancelled. No charges were made to your account.
+            Your payment has been cancelled. No charges were made to your account.
           </p>
           
           <p className="text-sm text-muted-foreground">
-            No charges were made. You can continue browsing cars or try renting again.
+            No charges were made. You can continue browsing cars or try purchasing again.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3">
             <Button asChild className="flex-1">
               <Link href="/">
                 <Home className="mr-2 h-4 w-4" />
-                Rent Cars
+                Browse Cars
               </Link>
             </Button>
             
             <Button variant="outline" asChild className="flex-1">
               <Link href="/">
                 <ShoppingBag className="mr-2 h-4 w-4" />
-                Browse Cars
+                Continue Shopping
               </Link>
             </Button>
           </div>

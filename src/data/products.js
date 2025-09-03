@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     title: "Luxury Sports Car - Ferrari 488",
-    price: 289999.99,
+    price: 2.99,
     image: "/car1.png",
     description: "Exclusive Ferrari 488 with 3.9L V8 engine, 661 horsepower, and stunning Italian design.",
     category: "Sports Cars"
@@ -10,7 +10,7 @@ export const products = [
   {
     id: 2,
     title: "Electric SUV - Tesla Model X",
-    price: 89990.00,
+    price: 8.00,
     image: "/car2.png",
     description: "Premium electric SUV with falcon-wing doors, autopilot, and 340-mile range.",
     category: "Electric Vehicles"
@@ -18,7 +18,7 @@ export const products = [
   {
     id: 3,
     title: "Classic Muscle Car - Ford Mustang GT",
-    price: 45995.00,
+    price: 4.00,
     image: "/car3.png",
     description: "Iconic American muscle car with 5.0L V8 engine and aggressive styling.",
     category: "Muscle Cars"

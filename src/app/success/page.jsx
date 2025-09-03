@@ -26,12 +26,12 @@ export default function SuccessPage() {
           <div className="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
             <CheckCircle className="h-8 w-8 text-green-600" />
           </div>
-          <CardTitle className="text-2xl text-green-600">Car Rented! 🎉</CardTitle>
+          <CardTitle className="text-2xl text-green-600">Payment Successful! 🎉</CardTitle>
         </CardHeader>
         
         <CardContent className="space-y-6">
           <p className="text-muted-foreground">
-            Congratulations! Your car rental has been confirmed! You can now pick up your vehicle at the specified location.
+            Congratulations! Your payment has been processed successfully. You will receive a confirmation email with your order details shortly.
           </p>
           
           {sessionId && (
@@ -43,21 +43,21 @@ export default function SuccessPage() {
           )}
           
           <p className="text-sm text-muted-foreground">
-            Check your email for rental details and pickup instructions!
+            Check your email for order confirmation and next steps!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3">
             <Button asChild className="flex-1">
               <Link href="/">
                 <Home className="mr-2 h-4 w-4" />
-                Rent More Cars
+                Browse More Cars
               </Link>
             </Button>
             
             <Button variant="outline" asChild className="flex-1">
               <Link href="/orders">
                 <ShoppingBag className="mr-2 h-4 w-4" />
-                View Rentals
+                View Orders
               </Link>
             </Button>
           </div>
